@@ -1,1 +1,57 @@
-/* Reset de estilos */
+/* Reset CSS baseado no Andy Bell */
+
+/* Regras de box-sizing: inclui padding e borda no tamanho total dos elementos */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* Remove margens padrão dos principais elementos de texto */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+/* Remove estilos de lista de ul e ol com role='list' */
+ul[role='list'], ol[role='list'] {
+	list-style: none;
+}
+
+/* Define comportamento de rolagem suave ao focar no HTML */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Define padrões principais para o body */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Links sem classe recebem estilo padrão para sublinhado */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Facilita o trabalho com imagens, tornando-as responsivas */
+img, picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Herda a fonte dos inputs e botões do body */
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* Remove todas as animações, transições e rolagem suave para quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
