@@ -37,7 +37,7 @@ a {
     
 }
 
-ul.ol{
+ul, ol{
     list-style:none;
 }
 /* Facilita o trabalho com imagens, tornando-as responsivas */
