@@ -6,6 +6,11 @@ body {
     
 }
 
+main{
+    padding: 2.5rem ;
+    max-width: 1360px;
+    margin: auto;
+}
 .btn{
     font-size: 1.25rem;
     width: 161px;
