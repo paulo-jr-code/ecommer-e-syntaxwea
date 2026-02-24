@@ -1,1 +1,54 @@
 /* Estilos do product-car */
+.category-section{
+        padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    display: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    
+}
+
+.category-card{
+    position: relative;
+    width: 317px;
+    height: 500px;
+    color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+   /* inset substitui top, right, bottom e left em uma única propriedade. O valor 0 significa que o elemento ficará posicionado no topo, à direita, na parte inferior e à esquerda do seu contêiner pai. Isso é útil para criar uma sobreposição que cobre toda a área do contêiner pai, como no caso da classe .overlay, onde queremos que a sombra preta com opacidade cubra toda a área da categoria. */
+.overlay{
+    position: absolute;
+    inset: 0;    
+    background-color: rgba(0, 0, 0, 0.25); /* Sombra preta com opacidade */
+    z-index: 1;  }
+
+.category-name{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;       
+    text-align: center;   
+
+}
+
+.casual{
+    background: url(../../images/produtos/tenis\ casual.jpg) no-repeat center center/cover;
+}
+
+.esporte{
+    background: url(../../images/produtos/tenis\ esportivo.jpg) no-repeat center center/cover;
+}
+
+.moderno{
+    background: url(../../images/produtos/tenis\ colorido.jpg) no-repeat center center/cover;
+}
+
+.futurista{
+    background: url(../../images/produtos/tenis\ futurista.jpg) no-repeat center center/cover;
+}
+
+/* sobreposição ou sombra preta com opacidade para melhorar a legibilidade do texto */

@@ -37,27 +37,3 @@ display: flex;
     gap: 16px;
     justify-content: center;
 }
-.btn{
-    font-size: 1.25rem;
-    width: 161px;
-    height:48px;
-    border-radius: 25px;
-    color: #ffffff;
-    font-weight: 400;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .btn-outline{
-        border: 2px solid #ffffff;
-        background-color: transparent;
-    }
-
-    .btn-filled{
-        background-color: #ffffff;
-        color: #6329a2;
-    }
-    .btn:hover{
-        background-color:#6329a2 ;
-        color: #ffffff;
-        border-color: #6329a2;
-    }
