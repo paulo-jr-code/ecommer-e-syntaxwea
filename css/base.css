@@ -7,7 +7,7 @@ body {
 }
 
 main{
-    padding: 2.5rem ;
+    padding: 2.5rem 0 2.5rem;
     max-width: 1360px;
     margin: auto;
 }
@@ -35,3 +35,5 @@ main{
         color: #ffffff;
         border-color: #6329a2;
     }
+
+    

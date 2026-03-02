@@ -11,8 +11,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
 }
 
 /* Remove estilos de lista de ul e ol com role='list' */
-ul[role='list'], ol[role='list'] {
+ul, ol {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 /* Define comportamento de rolagem suave ao focar no HTML */
