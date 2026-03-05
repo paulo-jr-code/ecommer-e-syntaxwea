@@ -52,3 +52,13 @@
 }
 
 /* sobreposição ou sombra preta com opacidade para melhorar a legibilidade do texto */
+@media (max-width: 500px) {
+    .category-section {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .category-card{
+        width: 100%;
+    }
+}

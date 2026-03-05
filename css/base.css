@@ -7,10 +7,17 @@ body {
 }
 
 main{
-    padding: 2.5rem 0 2.5rem;
+    padding: 2.5rem ;
     max-width: 1360px;
-    margin: auto;
+    margin: 0 auto;
 }
+@media (max-width:1280px) {
+    main{
+        padding: 0.625rem;
+    }
+}
+
+
 .btn{
     font-size: 1.25rem;
     width: 161px;
@@ -19,11 +26,12 @@ main{
     color: #ffffff;
     font-weight: 400;
     padding: 10px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s , border 0.3s;
     }
     .btn-outline{
         border: 2px solid #ffffff;
         background-color: transparent;
+        line-height: 23px;
     }
 
     .btn-filled{

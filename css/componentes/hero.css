@@ -20,20 +20,58 @@ display: flex;
     color: #ffffff;
     max-width: 388px;
     text-align: center;
+    margin-top: 100px;
 }
 .hero-content .hero-title{
     font-size: 1.87rem;
+    margin-top: 10px;
     margin-bottom: 40px;
     font-weight: 400;
-    line-height: 23px;
+    
 }
 .hero-content .hero-subtitle{
     font-size: 1.25rem;
     font-weight: 400;
+    
 }
 
 .hero-buttons{
     display: flex;
     gap: 16px;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 660px;
+        background-image: url(../../images/banner/hero-jpg.jpg);
+        background-position: 30% center;
+        background-size: cover;
+    }
+    
+     .hero-overlay {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-content .hero-title {
+        font-size: 1.5rem;
+        padding: 0 19px ;
+        
+    }
+    .hero-content .hero-subtitle {
+        font-size: 1.25rem;
+        ;
+        
+    }  
+
+    .hero-content{
+        max-width: 330px;
+        margin: o auto;
+    }
+
+    .btn{
+        font-size: 1.2rem;
+    }
 }
