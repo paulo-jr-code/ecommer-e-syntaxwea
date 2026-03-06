@@ -3,8 +3,8 @@
     position: fixed;
     top: 60px;
     left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 210px);
+    transform: translate(-50%);
+    width: 1250px;
     border-radius: 15px;
     z-index: 999;
     display: flex;
@@ -46,16 +46,18 @@
 
 .nav-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
+    flex: 1;
+    margin-left: 10rem;
 }
 
 .menu-toggle{
     display: none;
 }
 .menu-icon{
-    display: block;
+    display: none;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -118,5 +120,9 @@
         padding: 0.3rem;
         font-size: 1rem;
         display: block;
+    }
+
+    .menu-toggle:checked ~ .nav-container {
+        right: 0;
     }
 }
