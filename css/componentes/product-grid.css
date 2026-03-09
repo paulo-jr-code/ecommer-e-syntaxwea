@@ -74,7 +74,7 @@
 }
 
 @media (max-width: 768px) {
-    .grid-section{
+    .grid-section {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, auto);
         grid-template-areas:
@@ -85,16 +85,26 @@
             "sneaker-purple sneaker-purple";
         max-width: 100%;
         gap: 0.625rem;
-        }
     }
 
-    .highlight{
+    .highlight {
         min-height: 500px;
-        }
-        .model{
-            min-height: 371px;
-        }
+    }
 
-        .sneaker-white, .sneaker-purple{
-            min-height: 300px;
-        }
+    .model {
+        min-height: 550px; /* Altura para tablets/iPad */
+        background-position: center top;
+    }
+
+    .sneaker-white, 
+    .sneaker-purple {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .model {
+        min-height: 371px; /* Altura para celulares pequenos */
+    }
+}
+    
